@@ -7,15 +7,43 @@
 //
 
 import UIKit
+import Parse
+import TwitterKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    // MARK: Outlets
+    
+    
+    // MARK: Actions
+    
+    
+    @IBAction func didTapButton(sender: AnyObject)
+    {
+        // Create and initialize a DGTAppearance object with standard colors:
+        let digitsAppearance = DGTAppearance()
+        // Change color properties to customize the look:
+        digitsAppearance.backgroundColor = UIColor.blackColor()
+        digitsAppearance.accentColor = UIColor.greenColor()
+        
+        // Start the authentication flow with the custom appearance. Nil parameters for default values.
+        let digits = Digits.sharedInstance()
+        digits.authenticateWithDigitsAppearance(digitsAppearance, viewController: nil, title: nil) { (session, error) in
+            // Inspect session/error objects
+        }
+    }
+    
+    // MARK: View Functions
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
