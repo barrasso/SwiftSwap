@@ -22,24 +22,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SwiftSwap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-g8-UWB">
-                                <rect key="frame" x="48" y="145" width="279" height="107"/>
+                                <rect key="frame" x="48" y="167" width="279" height="107"/>
                                 <fontDescription key="fontDescription" name="Sansation-Bold" family="Sansation" pointSize="55"/>
                                 <color key="textColor" red="0.33333333333333331" green="0.67450980392156867" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a valid .edu email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSK-do-W1G">
-                                <rect key="frame" x="87" y="319" width="200" height="30"/>
+                                <rect key="frame" x="87" y="339" width="200" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The best way to buy and sell locally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDI-7s-dJh">
-                                <rect key="frame" x="69" y="227" width="237" height="47"/>
+                                <rect key="frame" x="69" y="249" width="237" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-ol-hoJ">
-                                <rect key="frame" x="97" y="377" width="180" height="40"/>
+                                <rect key="frame" x="97" y="397" width="180" height="40"/>
                                 <state key="normal" title="Sign Up" image="login-btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,6 +47,9 @@
                                     <action selector="didTapButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bl2-w9-jT9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-hx-Us9">
+                                <rect key="frame" x="112" y="29" width="150" height="150"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -108,6 +111,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fabric.png" width="512" height="512"/>
         <image name="login-btn.png" width="180" height="40"/>
     </resources>
 </document>

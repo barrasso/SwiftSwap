@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import TwitterKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     // Activity spinner indicator
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
@@ -138,6 +138,9 @@ class ViewController: UIViewController {
         
         self.view.backgroundColor = UIColorFromHex(0x00264e, alpha: 1.0)
         
+        self.usernameTextField.delegate = self;
+        
+        // LOGGING OUT EVERYTIME FOR DEMONSTRATIVE PURPOSES ////////////
         Digits.sharedInstance().logOut()
         
         // check if current user is logged in
@@ -146,7 +149,7 @@ class ViewController: UIViewController {
             // who is current user
             NSLog("Current User: %@", PFUser.currentUser().username)
             
-            
+            // segue to user table if already logged in
             
         }
         
@@ -167,6 +170,12 @@ class ViewController: UIViewController {
         let blue = CGFloat(rgbValue & 0xFF)/256.0
         
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool
+    {
+        self.view.endEditing(true);
+        return false;
     }
     
     // MARK: Alert Functions

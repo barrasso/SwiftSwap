@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041DAA3F1A7D5639002CB28D /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA3E1A7D5639002CB28D /* login-btn.png */; };
+		041DAA411A7D5787002CB28D /* fabric.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA401A7D5787002CB28D /* fabric.png */; };
 		04CEAE001A7D2E9000947B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */; };
 		04CEAE021A7D2E9000947B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEAE011A7D2E9000947B0A /* ViewController.swift */; };
 		04CEAE051A7D2E9000947B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE031A7D2E9000947B0A /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		041DAA3E1A7D5639002CB28D /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn.png"; sourceTree = "<group>"; };
+		041DAA401A7D5787002CB28D /* fabric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fabric.png; sourceTree = "<group>"; };
 		04CEADFA1A7D2E9000947B0A /* SwiftSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEADFE1A7D2E9000947B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		04CEADFD1A7D2E9000947B0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				041DAA401A7D5787002CB28D /* fabric.png */,
 				041DAA3E1A7D5639002CB28D /* login-btn.png */,
 				04CEAE491A7D418100947B0A /* Sansation_Bold.ttf */,
 				04CEAE4A1A7D418100947B0A /* Sansation_Italic.ttf */,
@@ -306,6 +309,7 @@
 				04CEAE4F1A7D418100947B0A /* Sansation_Light.ttf in Resources */,
 				04CEAE4E1A7D418100947B0A /* Sansation_Italic.ttf in Resources */,
 				04CEAE0A1A7D2E9000947B0A /* LaunchScreen.xib in Resources */,
+				041DAA411A7D5787002CB28D /* fabric.png in Resources */,
 				04CEAE071A7D2E9000947B0A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
