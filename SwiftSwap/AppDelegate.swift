@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 import Fabric
 import TwitterKit
 
@@ -18,10 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        // Initialize Parse
+        Parse.setApplicationId("9j4Sf88XiKWH3EPgNyApttIe26tHtUULsjXcJtwp",
+            clientKey: "76MWdlpMqbhQdD5imPp6cgi2cRIZi9I1BjJsOCi8")
         
-        Twitter.sharedInstance().startWithConsumerKey("your_key",
-            consumerSecret: "your_secret")
+        // Initialize Fabric
+        Twitter.sharedInstance().startWithConsumerKey("kLpF7FPOTkQ2m8pbtoFp3LNZG",
+            consumerSecret: "CaU420CntPebTaICzOqZdUQhz1qSOH7ekCgqn3RhMZQRe5vGVQ")
         Fabric.with([Twitter.sharedInstance()])
+        
+        // hide status bar
+        application.setStatusBarHidden(true, withAnimation: UIStatusBarAnimation(rawValue: 1)!)
         
         return true
     }

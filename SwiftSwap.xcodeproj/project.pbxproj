@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041DAA3F1A7D5639002CB28D /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA3E1A7D5639002CB28D /* login-btn.png */; };
 		04CEAE001A7D2E9000947B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */; };
 		04CEAE021A7D2E9000947B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEAE011A7D2E9000947B0A /* ViewController.swift */; };
 		04CEAE051A7D2E9000947B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE031A7D2E9000947B0A /* Main.storyboard */; };
@@ -31,6 +32,10 @@
 		04CEAE461A7D391100947B0A /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEAE431A7D391100947B0A /* TwitterKit.framework */; };
 		04CEAE471A7D391200947B0A /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE441A7D391100947B0A /* TwitterKitResources.bundle */; };
 		04CEAE481A7D391200947B0A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEAE451A7D391100947B0A /* Fabric.framework */; };
+		04CEAE4D1A7D418100947B0A /* Sansation_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE491A7D418100947B0A /* Sansation_Bold.ttf */; };
+		04CEAE4E1A7D418100947B0A /* Sansation_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE4A1A7D418100947B0A /* Sansation_Italic.ttf */; };
+		04CEAE4F1A7D418100947B0A /* Sansation_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE4B1A7D418100947B0A /* Sansation_Light.ttf */; };
+		04CEAE501A7D418100947B0A /* Sansation_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE4C1A7D418100947B0A /* Sansation_Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041DAA3E1A7D5639002CB28D /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn.png"; sourceTree = "<group>"; };
 		04CEADFA1A7D2E9000947B0A /* SwiftSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEADFE1A7D2E9000947B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,10 @@
 		04CEAE431A7D391100947B0A /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		04CEAE441A7D391100947B0A /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		04CEAE451A7D391100947B0A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		04CEAE491A7D418100947B0A /* Sansation_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sansation_Bold.ttf; sourceTree = "<group>"; };
+		04CEAE4A1A7D418100947B0A /* Sansation_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sansation_Italic.ttf; sourceTree = "<group>"; };
+		04CEAE4B1A7D418100947B0A /* Sansation_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sansation_Light.ttf; sourceTree = "<group>"; };
+		04CEAE4C1A7D418100947B0A /* Sansation_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sansation_Regular.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,11 @@
 		04CEADFD1A7D2E9000947B0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				041DAA3E1A7D5639002CB28D /* login-btn.png */,
+				04CEAE491A7D418100947B0A /* Sansation_Bold.ttf */,
+				04CEAE4A1A7D418100947B0A /* Sansation_Italic.ttf */,
+				04CEAE4B1A7D418100947B0A /* Sansation_Light.ttf */,
+				04CEAE4C1A7D418100947B0A /* Sansation_Regular.ttf */,
 				04CEADFE1A7D2E9000947B0A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -285,6 +300,11 @@
 			files = (
 				04CEAE471A7D391200947B0A /* TwitterKitResources.bundle in Resources */,
 				04CEAE051A7D2E9000947B0A /* Main.storyboard in Resources */,
+				04CEAE501A7D418100947B0A /* Sansation_Regular.ttf in Resources */,
+				041DAA3F1A7D5639002CB28D /* login-btn.png in Resources */,
+				04CEAE4D1A7D418100947B0A /* Sansation_Bold.ttf in Resources */,
+				04CEAE4F1A7D418100947B0A /* Sansation_Light.ttf in Resources */,
+				04CEAE4E1A7D418100947B0A /* Sansation_Italic.ttf in Resources */,
 				04CEAE0A1A7D2E9000947B0A /* LaunchScreen.xib in Resources */,
 				04CEAE071A7D2E9000947B0A /* Images.xcassets in Resources */,
 			);
@@ -530,6 +550,7 @@
 				04CEAE1B1A7D2E9000947B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04CEAE1C1A7D2E9000947B0A /* Build configuration list for PBXNativeTarget "SwiftSwapTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +559,7 @@
 				04CEAE1E1A7D2E9000947B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
