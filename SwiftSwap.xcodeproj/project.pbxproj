@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041DAA3F1A7D5639002CB28D /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA3E1A7D5639002CB28D /* login-btn.png */; };
 		041DAA411A7D5787002CB28D /* fabric.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA401A7D5787002CB28D /* fabric.png */; };
+		042D22F81A7D7597002C5DB0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D22F71A7D7597002C5DB0 /* SettingsViewController.swift */; };
 		04B846C71A7D5AFE00B701F6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B846C61A7D5AFE00B701F6 /* Media.xcassets */; };
 		04B846C91A7D5BB700B701F6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B846C81A7D5BB700B701F6 /* MainTableViewController.swift */; };
 		04B846CB1A7D5C5300B701F6 /* MainCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B846CA1A7D5C5300B701F6 /* MainCellTableViewCell.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		041DAA3E1A7D5639002CB28D /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn.png"; sourceTree = "<group>"; };
 		041DAA401A7D5787002CB28D /* fabric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fabric.png; sourceTree = "<group>"; };
+		042D22F71A7D7597002C5DB0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		04B846C61A7D5AFE00B701F6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		04B846C81A7D5BB700B701F6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		04B846CA1A7D5C5300B701F6 /* MainCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				04B846C81A7D5BB700B701F6 /* MainTableViewController.swift */,
 				04B846CA1A7D5C5300B701F6 /* MainCellTableViewCell.swift */,
 				04B846D01A7D634700B701F6 /* PostImageViewController.swift */,
+				042D22F71A7D7597002C5DB0 /* SettingsViewController.swift */,
 				04CEAE031A7D2E9000947B0A /* Main.storyboard */,
 				04CEADFD1A7D2E9000947B0A /* Supporting Files */,
 			);
@@ -354,6 +357,7 @@
 				04B846C91A7D5BB700B701F6 /* MainTableViewController.swift in Sources */,
 				04B846CB1A7D5C5300B701F6 /* MainCellTableViewCell.swift in Sources */,
 				04CEAE001A7D2E9000947B0A /* AppDelegate.swift in Sources */,
+				042D22F81A7D7597002C5DB0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

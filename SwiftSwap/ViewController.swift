@@ -159,6 +159,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
             // wait for signup/login
         }
     }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        // hide nar bar
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        // show nav bar
+        self.navigationController?.navigationBarHidden = false
+    }
 
     override func didReceiveMemoryWarning()
     {
@@ -176,6 +188,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
     
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+    {
+        // end editing when touching view
+        self.view.endEditing(true)
+    }
+    
     func textFieldShouldReturn(textField: UITextField!) -> Bool
     {
         self.view.endEditing(true);
@@ -190,7 +208,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var errortAlert = UIAlertController(title: title, message: error, preferredStyle: UIAlertControllerStyle.Alert)
         errortAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { action in
             
-            self.dismissViewControllerAnimated(true, completion: nil)
         }))
         
         self.presentViewController(errortAlert, animated: true, completion: nil)

@@ -14,7 +14,7 @@ class MainCellTableViewCell: UITableViewCell {
     
     @IBOutlet var postedImage: UIImageView!
     
-    @IBOutlet var postTitle: UILabel!
+    @IBOutlet var postedByUser: UILabel!
     @IBOutlet var postCaption: UILabel!
     
     override func awakeFromNib()
