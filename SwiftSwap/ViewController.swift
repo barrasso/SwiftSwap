@@ -141,19 +141,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.usernameTextField.delegate = self;
         
         // LOGGING OUT EVERYTIME FOR DEMONSTRATIVE PURPOSES ////////////
-        Digits.sharedInstance().logOut()
+        //Digits.sharedInstance().logOut()
         
-        // check if current user is logged in
-        if PFUser.currentUser() != nil
-        {
-            // who is current user
-            NSLog("Current User: %@", PFUser.currentUser().username)
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        // get current user cached on disk
+        var currentUser = PFUser.currentUser()
+        
+        if currentUser != nil {
             
-            // segue to user table if already logged in
+            // go to table segue
+            self.performSegueWithIdentifier("showMainFeed", sender: self)
             
+        } else {
+            // wait for signup/login
         }
-        
-        
     }
 
     override func didReceiveMemoryWarning()

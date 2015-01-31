@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		041DAA3F1A7D5639002CB28D /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA3E1A7D5639002CB28D /* login-btn.png */; };
 		041DAA411A7D5787002CB28D /* fabric.png in Resources */ = {isa = PBXBuildFile; fileRef = 041DAA401A7D5787002CB28D /* fabric.png */; };
+		04B846C71A7D5AFE00B701F6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B846C61A7D5AFE00B701F6 /* Media.xcassets */; };
+		04B846C91A7D5BB700B701F6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B846C81A7D5BB700B701F6 /* MainTableViewController.swift */; };
+		04B846CB1A7D5C5300B701F6 /* MainCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B846CA1A7D5C5300B701F6 /* MainCellTableViewCell.swift */; };
+		04B846D11A7D634700B701F6 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B846D01A7D634700B701F6 /* PostImageViewController.swift */; };
 		04CEAE001A7D2E9000947B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */; };
 		04CEAE021A7D2E9000947B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEAE011A7D2E9000947B0A /* ViewController.swift */; };
 		04CEAE051A7D2E9000947B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE031A7D2E9000947B0A /* Main.storyboard */; };
-		04CEAE071A7D2E9000947B0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE061A7D2E9000947B0A /* Images.xcassets */; };
-		04CEAE0A1A7D2E9000947B0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CEAE081A7D2E9000947B0A /* LaunchScreen.xib */; };
 		04CEAE161A7D2E9000947B0A /* SwiftSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEAE151A7D2E9000947B0A /* SwiftSwapTests.swift */; };
 		04CEAE241A7D331E00947B0A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEAE201A7D331E00947B0A /* Bolts.framework */; };
 		04CEAE251A7D331E00947B0A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEAE211A7D331E00947B0A /* Parse.framework */; };
@@ -52,13 +54,15 @@
 /* Begin PBXFileReference section */
 		041DAA3E1A7D5639002CB28D /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-btn.png"; sourceTree = "<group>"; };
 		041DAA401A7D5787002CB28D /* fabric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fabric.png; sourceTree = "<group>"; };
+		04B846C61A7D5AFE00B701F6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		04B846C81A7D5BB700B701F6 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		04B846CA1A7D5C5300B701F6 /* MainCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCellTableViewCell.swift; sourceTree = "<group>"; };
+		04B846D01A7D634700B701F6 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 		04CEADFA1A7D2E9000947B0A /* SwiftSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEADFE1A7D2E9000947B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CEAE011A7D2E9000947B0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04CEAE041A7D2E9000947B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04CEAE061A7D2E9000947B0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		04CEAE091A7D2E9000947B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04CEAE0F1A7D2E9000947B0A /* SwiftSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEAE141A7D2E9000947B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CEAE151A7D2E9000947B0A /* SwiftSwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSwapTests.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		04CEADF11A7D2E9000947B0A = {
 			isa = PBXGroup;
 			children = (
+				04B846C61A7D5AFE00B701F6 /* Media.xcassets */,
 				04CEADFC1A7D2E9000947B0A /* SwiftSwap */,
 				04CEAE281A7D334D00947B0A /* SwiftSwap-Bridging-Header.h */,
 				04CEAE121A7D2E9000947B0A /* SwiftSwapTests */,
@@ -148,9 +153,10 @@
 			children = (
 				04CEADFF1A7D2E9000947B0A /* AppDelegate.swift */,
 				04CEAE011A7D2E9000947B0A /* ViewController.swift */,
+				04B846C81A7D5BB700B701F6 /* MainTableViewController.swift */,
+				04B846CA1A7D5C5300B701F6 /* MainCellTableViewCell.swift */,
+				04B846D01A7D634700B701F6 /* PostImageViewController.swift */,
 				04CEAE031A7D2E9000947B0A /* Main.storyboard */,
-				04CEAE061A7D2E9000947B0A /* Images.xcassets */,
-				04CEAE081A7D2E9000947B0A /* LaunchScreen.xib */,
 				04CEADFD1A7D2E9000947B0A /* Supporting Files */,
 			);
 			path = SwiftSwap;
@@ -301,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B846C71A7D5AFE00B701F6 /* Media.xcassets in Resources */,
 				04CEAE471A7D391200947B0A /* TwitterKitResources.bundle in Resources */,
 				04CEAE051A7D2E9000947B0A /* Main.storyboard in Resources */,
 				04CEAE501A7D418100947B0A /* Sansation_Regular.ttf in Resources */,
@@ -308,9 +315,7 @@
 				04CEAE4D1A7D418100947B0A /* Sansation_Bold.ttf in Resources */,
 				04CEAE4F1A7D418100947B0A /* Sansation_Light.ttf in Resources */,
 				04CEAE4E1A7D418100947B0A /* Sansation_Italic.ttf in Resources */,
-				04CEAE0A1A7D2E9000947B0A /* LaunchScreen.xib in Resources */,
 				041DAA411A7D5787002CB28D /* fabric.png in Resources */,
-				04CEAE071A7D2E9000947B0A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B846D11A7D634700B701F6 /* PostImageViewController.swift in Sources */,
 				04CEAE021A7D2E9000947B0A /* ViewController.swift in Sources */,
+				04B846C91A7D5BB700B701F6 /* MainTableViewController.swift in Sources */,
+				04B846CB1A7D5C5300B701F6 /* MainCellTableViewCell.swift in Sources */,
 				04CEAE001A7D2E9000947B0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,14 +382,6 @@
 				04CEAE041A7D2E9000947B0A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		04CEAE081A7D2E9000947B0A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04CEAE091A7D2E9000947B0A /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -468,8 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.6.1",
@@ -478,6 +480,7 @@
 				INFOPLIST_FILE = SwiftSwap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSwap-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -487,8 +490,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.6.1",
@@ -497,6 +502,7 @@
 				INFOPLIST_FILE = SwiftSwap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSwap-Bridging-Header.h";
 			};
 			name = Release;
