@@ -7,6 +7,17 @@
         <mutableArray key="Sansation_Bold.ttf">
             <string>Sansation-Bold</string>
         </mutableArray>
+        <mutableArray key="Sansation_Regular.ttf">
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+            <string>Sansation-Regular</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--Login-->
@@ -29,12 +40,20 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The best way to buy and sell locally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDI-7s-dJh">
                                 <rect key="frame" x="69" y="249" width="237" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-hx-Us9">
+                                <rect key="frame" x="112" y="29" width="150" height="150"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a valid .edu email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSK-do-W1G">
+                                <rect key="frame" x="76" y="332" width="222" height="30"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OJ-ol-hoJ">
-                                <rect key="frame" x="60" y="425" width="254" height="56"/>
+                                <rect key="frame" x="60" y="389" width="254" height="56"/>
                                 <state key="normal" image="login-btn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,14 +61,6 @@
                                     <action selector="didTapButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bl2-w9-jT9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-hx-Us9">
-                                <rect key="frame" x="112" y="29" width="150" height="150"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a valid .edu email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSK-do-W1G">
-                                <rect key="frame" x="76" y="373" width="222" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -73,26 +84,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="500" id="vAO-k9-78D" customClass="MainCellTableViewCell" customModule="SwiftSwap" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="550" id="vAO-k9-78D" customClass="MainCellTableViewCell" customModule="SwiftSwap" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAO-k9-78D" id="vtg-Dl-0XC">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric.png" translatesAutoresizingMaskIntoConstraints="NO" id="iJ1-rp-ZvB">
-                                            <rect key="frame" x="12" y="55" width="350" height="350"/>
+                                            <rect key="frame" x="0.0" y="57" width="375" height="375"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDx-Yh-Hol">
-                                            <rect key="frame" x="12" y="8" width="179" height="39"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="48" y="9" width="179" height="39"/>
+                                            <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="21"/>
+                                            <color key="textColor" red="0.0" green="0.28235294117647058" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a short caption about the item." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fiy-7J-NYx">
-                                            <rect key="frame" x="8" y="413" width="359" height="43"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="41" y="451" width="326" height="30"/>
+                                            <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="18"/>
+                                            <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultpic.png" translatesAutoresizingMaskIntoConstraints="NO" id="djo-zH-qYG">
+                                            <rect key="frame" x="8" y="13" width="32" height="32"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="caption-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cA4-Un-QUI">
+                                            <rect key="frame" x="8" y="451" width="30" height="30"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miK-VD-VOs" userLabel="Phone Button">
+                                            <rect key="frame" x="41" y="501" width="30" height="30"/>
+                                            <state key="normal" image="phone2-50.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAi-fk-3PY" userLabel="Email Button">
+                                            <rect key="frame" x="172" y="501" width="30" height="30"/>
+                                            <state key="normal" image="reply-50.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V37-sr-MgD" userLabel="Link Button">
+                                            <rect key="frame" x="307" y="501" width="30" height="30"/>
+                                            <state key="normal" image="link-50.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="tintColor" red="0.33333333329999998" green="0.67450980390000004" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
@@ -109,24 +144,17 @@
                             <outlet property="delegate" destination="AMB-S2-BZf" id="gh7-hE-pVG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Feed" id="Bpd-NH-mP2">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="Byi-Or-7bX">
-                            <connections>
-                                <segue destination="pGP-Fk-Eck" kind="show" identifier="" id="K7q-b5-co0"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="sZc-cA-3bA">
-                            <connections>
-                                <segue destination="eFh-sw-hoJ" kind="show" id="azl-0m-2Bv"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Feed" id="Bpd-NH-mP2"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="eFh-sw-hoJ" kind="show" identifier="showNewPost" id="Cj4-tS-BQO"/>
+                        <segue destination="pGP-Fk-Eck" kind="show" identifier="showSettings" id="bVu-2I-Y2c"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtR-Xg-cNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389.5" y="321.5"/>
+            <point key="canvasLocation" x="1389.5" y="315.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="NYV-Bn-EJ7">
@@ -143,7 +171,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmj-lD-EGt">
                                 <rect key="frame" x="126" y="183" width="122" height="86"/>
                                 <color key="backgroundColor" red="0.0" green="0.28235294119999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="20"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,12 +206,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric.png" translatesAutoresizingMaskIntoConstraints="NO" id="YRg-s5-4by">
-                                <rect key="frame" x="47" y="73" width="280" height="280"/>
+                                <rect key="frame" x="0.0" y="52" width="375" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhb-xY-4Pe">
-                                <rect key="frame" x="192" y="361" width="135" height="50"/>
+                                <rect key="frame" x="224" y="435" width="135" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.28235294119999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="20"/>
                                 <state key="normal" title="Use Picture">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,9 +221,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCj-Zd-EZx">
-                                <rect key="frame" x="85" y="532" width="205" height="57"/>
+                                <rect key="frame" x="85" y="590" width="205" height="57"/>
                                 <color key="backgroundColor" red="0.0" green="0.28235294119999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="28"/>
                                 <state key="normal" title="Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,10 +232,15 @@
                                     <action selector="createPost:" destination="eFh-sw-hoJ" eventType="touchUpInside" id="27E-0H-m5d"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlR-YH-hFt">
+                                <rect key="frame" x="47" y="529" width="280" height="30"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pw4-1p-ASI">
-                                <rect key="frame" x="47" y="361" width="135" height="50"/>
+                                <rect key="frame" x="16" y="435" width="135" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.28235294119999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Sansation-Regular" family="Sansation" pointSize="20"/>
                                 <state key="normal" title="New Picture">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -216,11 +249,6 @@
                                     <action selector="newPicture:" destination="eFh-sw-hoJ" eventType="touchUpInside" id="w3l-WG-5xf"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlR-YH-hFt">
-                                <rect key="frame" x="47" y="458" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -255,8 +283,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="caption-icon.png" width="128" height="128"/>
+        <image name="defaultpic.png" width="128" height="128"/>
         <image name="fabric.png" width="512" height="512"/>
+        <image name="link-50.png" width="50" height="50"/>
         <image name="login-btn.png" width="180" height="40"/>
+        <image name="phone2-50.png" width="50" height="50"/>
+        <image name="reply-50.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yCK-K3-53C"/>

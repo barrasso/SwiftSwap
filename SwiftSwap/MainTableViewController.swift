@@ -24,6 +24,11 @@ class MainTableViewController: UITableViewController {
     {
         super.viewDidLoad()
         self.view.backgroundColor = UIColorFromHex(0xf0f0f0, alpha: 1.0)
+        self.tableView.allowsSelection = false
+        
+        // set nav bar items
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: Selector("showSettings"))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target: self, action: Selector("showNewPost"))
         
         // define refresher
         refresher = UIRefreshControl()
@@ -37,9 +42,11 @@ class MainTableViewController: UITableViewController {
     
     func updatePosts()
     {
+        println(PFUser.currentUser().username)
+        
         // query for all posted objects from other users
         var query = PFQuery(className: "Posts")
-        query.whereKey("username", notEqualTo: PFUser.currentUser().username)
+        query.orderByDescending("createdAt")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
@@ -102,7 +109,7 @@ class MainTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
-        return 500
+        return 550
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -138,6 +145,16 @@ class MainTableViewController: UITableViewController {
         let blue = CGFloat(rgbValue & 0xFF)/256.0
         
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
+    }
+    
+    func showNewPost()
+    {
+        self.performSegueWithIdentifier("showNewPost", sender: self)
+    }
+    
+    func showSettings()
+    {
+        self.performSegueWithIdentifier("showSettings", sender: self)
     }
 
     /*

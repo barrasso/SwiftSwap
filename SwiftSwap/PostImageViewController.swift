@@ -167,6 +167,7 @@ class PostImageViewController: UIViewController, UIImagePickerControllerDelegate
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColorFromHex(0xf0f0f0, alpha: 1.0)
         
         // set text field delegates
         self.captionTextField.delegate = self
